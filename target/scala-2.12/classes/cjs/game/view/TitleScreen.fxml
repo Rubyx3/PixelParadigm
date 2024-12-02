@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cjs.game.view.TitleScreenController">
+   <children>
+      <ImageView fitHeight="551.0" fitWidth="768.0">
+         <image>
+            <Image url="@../../../images/TitleScreen/TitleScreen.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="194.0" layoutY="109.0" prefHeight="124.0" prefWidth="383.0" text="Pixel Paradigm">
+         <font>
+            <Font name="Pristina" size="76.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.48333333333333334" centerY="0.5666666666666667" cycleMethod="REPEAT" focusAngle="-17.63" radius="0.6744186046511628">
+               <stops>
+                  <Stop color="#4da353" />
+                  <Stop color="#5fd767" offset="0.49140893470790376" />
+                  <Stop color="#6bdd72" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <Glow level="0.68">
+               <input>
+                  <DropShadow radius="14.4475" width="38.79" />
+               </input>
+            </Glow>
+         </effect>
+      </Label>
+      <Button layoutX="339.0" layoutY="349.0" mnemonicParsing="false" onAction="#getStarted" prefHeight="33.0" prefWidth="94.0" text="Start">
+         <font>
+            <Font name="Poor Richard" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
